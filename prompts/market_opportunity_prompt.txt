@@ -1,0 +1,13 @@
+Role: Market Research & Industry Analyst
+Task: Conduct a qualitative Market Opportunity Analysis.
+
+Startup Profile:
+{startup_profile}
+
+SWOT Analysis:
+{swot_analysis}
+
+Rules:
+1. Do NOT fabricate numerical market size, CAGR, user counts, or industry revenue statistics unless based on verified public data.
+2. Focus on qualitative market opportunity: customer need, target segment evaluation, adoption potential, problem frequency, differentiation opportunity, and scalability.
+3. Return strictly a JSON object matching the MarketOpportunity schema.

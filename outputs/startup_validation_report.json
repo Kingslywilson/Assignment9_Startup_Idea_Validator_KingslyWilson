@@ -1,0 +1,231 @@
+{
+  "startup_profile": {
+    "idea_raw": "I want to build an AI platform that helps college students prepare for technical interviews using personalized mock interviews and feedback.",
+    "is_valid": true,
+    "rejection_reason": "",
+    "concept": "AI platform for personalized technical interview preparation",
+    "target_audience_explicit": [
+      "College students preparing for technical interviews",
+      "Recent graduates seeking tech roles"
+    ],
+    "target_audience_assumptions": [],
+    "problem_statement": "College students and recent graduates preparing for technical interviews often lack personalized mock interview practice and constructive feedback, leading to suboptimal interview performance and reduced job placement success.",
+    "proposed_solution": "An AI-driven platform that offers personalized mock technical interviews and real-time feedback tailored to each student's skill level and target roles.",
+    "provided_revenue_model": [],
+    "suggested_revenue_models": [
+      "Freemium subscription",
+      "Premium subscription",
+      "Pay-per-interview",
+      "Corporate partnership licensing",
+      "Job placement fee"
+    ],
+    "known_competitors": [],
+    "potential_competitors_alternatives": [
+      "LeetCode",
+      "HackerRank",
+      "Interviewing.io",
+      "Pramp",
+      "Exponent",
+      "CodeSignal",
+      "Codewars",
+      "Coderbyte",
+      "AlgoExpert",
+      "InterviewBit",
+      "Interview Cake"
+    ],
+    "missing_information": [
+      "Revenue model and pricing strategy",
+      "Target market size and segmentation",
+      "User acquisition and retention strategy",
+      "Differentiation from existing interview prep tools",
+      "Technology stack and AI model details",
+      "Content creation and curation process",
+      "Data privacy and compliance considerations",
+      "Partnerships with universities or employers",
+      "Scalability and performance requirements",
+      "Legal and regulatory compliance"
+    ]
+  },
+  "swot_analysis": {
+    "strengths": [
+      "Clear and acute student pain point during placement season",
+      "High scalability with automated AI mock interviews and instant feedback",
+      "Low marginal cost per interview session generated"
+    ],
+    "weaknesses": [
+      "Dependence on third-party LLM APIs for feedback evaluation",
+      "Potential user skepticism regarding AI scoring accuracy vs real human interviewers",
+      "Seasonal user churn post placement season"
+    ],
+    "opportunities": [
+      "Expansion into institutional B2B licensing with colleges and placement cells",
+      "Corporate partnerships for talent pre-screening",
+      "Multi-domain expansion (behavioral, system design, data science)"
+    ],
+    "threats": [
+      "Established prep platforms (LeetCode, HackerRank) launching native AI mock tools",
+      "Rapid model shifts requiring continuous evaluation prompt engineering",
+      "Low switching barrier for students"
+    ]
+  },
+  "market_opportunity": {
+    "customer_need_analysis": "Qualitative need is indicated among students seeking structured, low-pressure mock interview environments prior to placement recruitment.",
+    "target_segment_evaluation": "Target segment appears to focus on final-year STEM and CS undergraduates, with potential secondary interest from bootcamp grads.",
+    "adoption_potential": "Potential adoption is plausible driven by immediate career advancement incentives, though willingness to pay requires empirical validation.",
+    "problem_frequency": "Problem frequency is highest during peak recruitment cycles, transitioning to periodic usage during off-seasons.",
+    "differentiation_opportunity": "Differentiation potential rests on providing adaptive AI feedback scoring, custom role rubrics, and detailed voice/code analysis.",
+    "scalability_assessment": "Scalability potential is structurally favorable for digital session delivery, provided LLM API operating costs are managed.",
+    "market_summary": "Plausible qualitative market opportunity addressing an identified student pain point, requiring empirical validation of conversion rates and enterprise demand."
+  },
+  "technical_feasibility": {
+    "feasibility_rating": "Moderate to High",
+    "reasoning": "Core components rely on mature LLM APIs, speech-to-text engines, and web frameworks. Main challenges involve real-time latency and scoring consistency.",
+    "core_technical_requirements": [
+      "Web/Mobile user interface for live interview simulation",
+      "Real-time audio streaming and speech recognition engine",
+      "LLM evaluation engine with structured rubric parsing",
+      "Secure user response storage and feedback analytics database"
+    ],
+    "architecture_complexity": "Moderate complexity. Requires asynchronous processing pipeline for audio handling and LLM prompt chaining.",
+    "ai_ml_requirements": [
+      "Whisper or equivalent Speech-to-Text API",
+      "LLMs for dynamic question generation and answer evaluation",
+      "Text-to-Speech API for conversational voice output"
+    ],
+    "external_api_dependencies": [
+      "OpenAI/Groq API",
+      "Deepgram/Whisper API",
+      "ElevenLabs or Web Speech API"
+    ],
+    "infrastructure_and_scalability": "Cloud serverless backend (FastAPI/Node), Redis cache for session state, PostgreSQL for structured logs.",
+    "suggested_architecture": [
+      "Frontend (React / Next.js Web App)",
+      "Python API (FastAPI / WebSockets)",
+      "Interview Engine (Prompt & Context Manager)",
+      "LangChain Workflow (Multi-agent evaluation)",
+      "LLM & Speech Providers (Groq / OpenAI / Whisper)",
+      "Database & Analytics (PostgreSQL & Redis Cache)"
+    ]
+  },
+  "risk_assessment": {
+    "risks": [
+      {
+        "risk": "High dependence on third-party LLM APIs for live interview evaluation",
+        "category": "Dependency Risk",
+        "potential_impact": "Operating costs may escalate rapidly as user volume and session length increase.",
+        "likelihood": "High",
+        "suggested_mitigation": "Implement prompt optimization, response caching, semantic compression, and routing simpler evaluation tasks to lower-cost open models."
+      },
+      {
+        "risk": "User skepticism regarding AI feedback credibility compared to human interviewers",
+        "category": "Adoption Risk",
+        "potential_impact": "Lower conversion rates from free mock sessions to paid subscriptions.",
+        "likelihood": "Medium",
+        "suggested_mitigation": "Benchmark AI feedback against official industry hiring rubrics and feature transparent scoring justifications."
+      },
+      {
+        "risk": "Seasonal demand fluctuation aligned with college placement cycles",
+        "category": "Market Risk",
+        "potential_impact": "Unpredictable monthly recurring revenue and severe off-season user churn.",
+        "likelihood": "High",
+        "suggested_mitigation": "Diversify into year-round enterprise B2B hiring assessment licensing and continuous skill improvement modules."
+      },
+      {
+        "risk": "Latency spikes during audio-to-text and AI evaluation streaming",
+        "category": "Technical Risk",
+        "potential_impact": "Degraded user experience during live interview practice.",
+        "likelihood": "Medium",
+        "suggested_mitigation": "Deploy WebSocket streaming with local audio buffering and edge-deployed speech recognition services."
+      }
+    ],
+    "overall_risk_summary": "Primary risks stem from API cost dependencies and seasonal demand cycles. Mitigations prioritize architectural cost controls and enterprise expansion."
+  },
+  "investor_questions": {
+    "questions": [
+      {
+        "category": "Problem",
+        "question": "How have you empirically validated that students will pay out-of-pocket for AI mock interviews vs relying on free practice with peers?",
+        "context_rationale": "Tests willingness to pay and market validation beyond free usage."
+      },
+      {
+        "category": "Customer",
+        "question": "Who is your primary paying customer: individual students, university placement cells, or enterprise recruiters?",
+        "context_rationale": "Clarifies customer persona, sales cycle length, and go-to-market motion."
+      },
+      {
+        "category": "Competition",
+        "question": "Why would a computer science student choose your platform over LeetCode's ecosystem or general ChatGPT sessions?",
+        "context_rationale": "Evaluates product defensibility and unique value proposition."
+      },
+      {
+        "category": "Revenue",
+        "question": "Given the seasonal nature of college recruitment, how will you maintain steady cash flow during off-season months?",
+        "context_rationale": "Assesses financial sustainability and seasonality mitigation."
+      },
+      {
+        "category": "Technology",
+        "question": "How do you ensure AI interview evaluations remain consistently objective and free from hallucinations across complex coding prompts?",
+        "context_rationale": "Tests technical robustness and quality assurance standards."
+      },
+      {
+        "category": "Scalability",
+        "question": "What happens to unit economics when 50,000 students simultaneously run 30-minute voice/text mock interviews during peak hiring week?",
+        "context_rationale": "Examines margin scalability and API operating cost structures."
+      },
+      {
+        "category": "Risk",
+        "question": "What is the single biggest unproven business assumption in your deck, and what pilot test will prove or disprove it?",
+        "context_rationale": "Evaluates founder self-awareness and lean hypothesis testing."
+      }
+    ]
+  },
+  "viability_score": {
+    "problem_clarity": 15.0,
+    "customer_need": 14.0,
+    "market_opportunity": 8.0,
+    "differentiation": 9.5,
+    "revenue_model": 7.0,
+    "technical_feasibility": 8.0,
+    "scalability": 6.5,
+    "risk_profile": 6.5,
+    "overall_viability_score": 74.5,
+    "scoring_explanation": "Viability score is 74.5/100. Breakdown: Problem Clarity (15.0/15), Customer Need (14.0/15), Market Opportunity (8.0/15), Differentiation (9.5/15), Revenue Model (7.0/10), Technical Feasibility (8.0/10), Scalability (6.5/10), Risk Profile (6.5/10)."
+  },
+  "improvement_suggestions": [
+    "Test willingness to pay early by offering a paid mock interview tier before heavy feature development.",
+    "Form strategic pilot partnerships with 2-3 engineering college placement departments.",
+    "Implement model routing and response caching to keep API operational costs low at scale.",
+    "Benchmarking AI feedback against industry standards to build student trust."
+  ],
+  "gtm_strategy": {
+    "initial_customer_segment": "Final-year computer science and engineering undergraduates preparing for upcoming campus recruitment drives.",
+    "positioning": "The personalized AI mock interviewer that provides instant, actionable technical and communication feedback.",
+    "acquisition_channels": [
+      "Campus ambassador programs in top engineering colleges",
+      "Targeted student tech communities (Discord, Reddit, LinkedIn)",
+      "Partnerships with university placement cells and student coding clubs"
+    ],
+    "pilot_strategy": "Run a limited pilot with a small group of target students to measure mock completion rates, repeat usage, willingness to pay, and feedback quality.",
+    "pricing_approach": "Test a freemium model with free introductory sessions, followed by low-cost monthly subscription or pay-per-session tiers to validate pricing willingness.",
+    "partnerships": [
+      "University placement cells",
+      "Coding bootcamps",
+      "Student developer clubs"
+    ],
+    "validation_metrics": [
+      "User activation rate",
+      "Mock interview completion rate",
+      "Paid plan conversion %",
+      "User net promoter score (NPS)"
+    ],
+    "expansion_strategy": "Expand into institutional B2B enterprise tier sold to universities and corporate recruitment screening teams."
+  },
+  "critical_assumptions": [
+    "Students are willing to pay for AI-generated interview feedback out-of-pocket.",
+    "Colleges will purchase institutional-level software licenses for placement cells.",
+    "AI-generated evaluation is perceived as credible and helpful by job seekers.",
+    "LLM API unit costs will remain sustainable during high usage spikes."
+  ],
+  "validation_summary": "Validation Summary: The startup idea addresses a clear student pain point and is technically feasible using current AI technologies. However, user willingness to pay out-of-pocket, retention past recruitment season, and API operating unit economics require empirical validation before scaling.",
+  "recommended_next_step": "Build a lightweight MVP with a 1-week student pilot in 2 target colleges to validate mock completion rates and user feedback credibility."
+}

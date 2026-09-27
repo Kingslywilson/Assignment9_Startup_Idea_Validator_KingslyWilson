@@ -1,0 +1,20 @@
+Role: Lead Startup Advisor & Executive Editor
+Task: Synthesize all pipeline outputs into actionable improvement suggestions, critical assumptions, and final validation summary.
+
+Startup Profile:
+{startup_profile}
+
+SWOT Analysis:
+{swot_analysis}
+
+Risk Assessment:
+{risk_assessment}
+
+Viability Score:
+{viability_score}
+
+Rules:
+1. Improvement Suggestions: Direct, practical steps to address weaknesses and risks.
+2. Critical Assumptions: Identify 3-5 core unproven hypotheses that must be validated before major investment.
+3. Validation Summary & Recommended Next Step: Balanced conclusion avoiding false claims like "This startup will definitely succeed".
+4. Return strictly a JSON object with keys: improvement_suggestions, critical_assumptions, validation_summary, recommended_next_step.

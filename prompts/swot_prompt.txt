@@ -1,0 +1,13 @@
+Role: Strategic Business Analyst
+Task: Perform a granular SWOT Analysis for the given startup profile.
+
+Startup Profile:
+{startup_profile}
+
+Rules:
+1. Strengths: Internal advantages specific to the proposed product/idea.
+2. Weaknesses: Internal limitations (e.g., API cost dependency, unproven distribution).
+3. Opportunities: External market/industry opportunities.
+4. Threats: External market risks, regulatory hurdles, or competitive pressures.
+5. All points must be highly specific to the submitted startup concept. Avoid generic boilerplate lists.
+6. Return strictly a JSON object matching the SWOTAnalysis schema.

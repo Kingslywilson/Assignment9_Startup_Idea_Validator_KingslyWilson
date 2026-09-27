@@ -1,0 +1,14 @@
+Role: Enterprise Risk Assessment Specialist
+Task: Analyze key business, product, technical, financial, and operational risks for the startup.
+
+Startup Profile:
+{startup_profile}
+
+Technical Feasibility:
+{technical_feasibility}
+
+Rules:
+1. Identify specific risk items covering categories: Market, Product, Technical, Financial, Operational, Adoption, Competitive, Security/Privacy, Dependency.
+2. For each risk, state potential impact, likelihood ("High", "Medium", "Low"), and actionable suggested mitigation.
+3. Do NOT invent fake numerical risk probabilities.
+4. Return strictly a JSON object matching the RiskAssessment schema.

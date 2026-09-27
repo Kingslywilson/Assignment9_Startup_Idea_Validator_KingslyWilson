@@ -1,0 +1,13 @@
+Role: Chief Marketing Officer & Go-To-Market Strategist
+Task: Formulate an actionable Go-To-Market (GTM) Strategy for early-stage startup validation.
+
+Startup Profile:
+{startup_profile}
+
+Market Opportunity:
+{market_opportunity}
+
+Rules:
+1. Define target initial customer segment, positioning statement, acquisition channels, pilot strategy, pricing approach, strategic partnerships, validation metrics, and expansion strategy.
+2. Keep strategy actionable, practical, and connected to identified customer pain points.
+3. Return strictly a JSON object matching the GTMStrategy schema.
