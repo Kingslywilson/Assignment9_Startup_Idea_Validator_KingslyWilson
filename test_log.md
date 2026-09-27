@@ -344,11 +344,19 @@ The system continued the validation process successfully.
 
 **Scenario:**
 
-No startup idea is entered and the user continues with the application.
+No startup idea is entered.
 
 **Expected Behavior:**
 
-The application handles the input flow without crashing and provides the configured default/sample behavior.
+The application should reject the empty input and should not start the validation pipeline.
+
+**Actual Result:**
+
+The application displayed:
+
+> Error: Startup idea cannot be empty.
+
+The validation pipeline was not executed.
 
 **Result:** PASS
 
@@ -362,7 +370,15 @@ The startup idea contains only whitespace.
 
 **Expected Behavior:**
 
-The application handles the input validation flow without an unhandled application crash.
+The application should reject whitespace-only input and should not start the validation pipeline.
+
+**Actual Result:**
+
+The whitespace input was stripped and rejected with:
+
+> Error: Startup idea cannot be empty.
+
+The validation pipeline was not executed.
 
 **Result:** PASS
 
