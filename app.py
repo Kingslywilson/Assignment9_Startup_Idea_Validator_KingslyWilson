@@ -23,12 +23,14 @@ def run_app():
         idea = " ".join(sys.argv[1:])
     else:
         print("=== AI Startup Idea Validator ===")
-        print("Enter your startup idea below (or press Enter for default sample):")
+        print("Enter your startup idea below ")
         user_input = input("> ").strip()
-        if user_input:
-            idea = user_input
-        else:
-            idea = "An AI-based platform that helps college students prepare for technical interviews using personalized mock interviews."
+
+        if not user_input:
+            print("Error: Startup idea cannot be empty.")
+            return
+
+        idea = user_input
 
     print(f"\nAnalyzing Startup Idea: '{idea}'...\n")
 
